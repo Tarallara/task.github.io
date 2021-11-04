@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YLYL</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="https://www.twitch.tv/wilbursoot" class="logo">YLYL</a>
+        </header>
+        <img src="./bg.jpg" class="bg">
+        <img src="./wilbur.png" class="ylyl">
+        <div class="content">
+            <h2>you laugh you lose <span>rules</span></h2>
+            <p>1: No Boomers<br>
+                2: No Zoomers<br>
+                3: No weebs (under penalty of death (i'm looking at you Phil)<br>
+                4: No marvel stans<br>
+                5: Stan Loona<br>
+                6: No Kpop<br>
+                7: No My Little Pony, friendship is f*ck<br>
+                8: No videos I’ve already seen before<br>
+                9: Staged videos are sh*t<br>
+                10: Ignore rule 5 <br>
+                11: Loud videos are SOMETIMES funny<br>
+                12: Loud videos are sometimes NOT funny <br>
+                13: This rule doesn't exist<br>
+            </p>
+        </div>
+    </section>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", function(e){
+            const bg = document.querySelector('.bg');
+            const ylyl = document.querySelector('.ylyl');
+            const content = document.querySelector('.content');
+
+            bg.style.width = 100 + e.pageX/100 + '%';
+            bg.style.height = 100 + e.pageX/100 + '%';
+            
+            ylyl.style.right = 100 + e.pageX/2 + 'px';
+            content.style.left = 100 + e.pageX/2.5 + 'px';
+        })
+    </script>
+
+</body>
+</html>
